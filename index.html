@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign-Up Form</title>
+</head>
+
+<body>
+    <!-- fix left side -->
+    <div id="leftSide">
+        <figure id="bgimgContainer">
+            <img id="backgroundImg" src="/images/elyssa-fahndrich-MF16lGb95WY-unsplash.jpg" alt="">
+            <figcaption>photo by Elyssa Fahndrich</figcaption>
+        </figure>
+        <picture id="odin-logo_section">
+            <source
+                srcset="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+                type="image/png">
+            <img id="odin-logo" src="/images/odin-lined.png" alt="image of flowers">
+        </picture>
+    </div>
+
+    <form action="">
+        <legend id="topTextBlob">
+            <p>
+                Imaginary service, that doesn't exist
+                the information entered into the form
+                isn't even saved.
+                <br>
+                <br>
+                extra sentence to make the text look better?
+            </p>
+        </legend>
+
+        <fieldset id="inputFields">
+            <legend>
+                <p>sign up form</p>
+            </legend>
+            <label for="Fname">first name</label>
+            <input type="text" id="Fname" name="Fname">
+
+            <label for="Lname">last name</label>
+            <input type="text" id="Lname" name="Lname">
+
+            <label for="email">email</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phone">phone number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+            <label for="pass">password</label>
+            <input type="password" id="pass" name="pass">
+
+            <label for="confirmPass">confirm password</label>
+            <input type="password" id="confirmPass" name="confirmPass">
+        </fieldset>
+
+        <button type="submit">create acount</button>
+        <p><a href="">log in</a></p>
+    </form>
+
+</body>
+
+</html>
